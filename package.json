@@ -1,0 +1,71 @@
+{
+  "name": "Ultimate_MEAN_Framework",
+  "version": "0.9.0",
+  "description": "Base to start new project with MEAN Full Stack.",
+  "main": "app.js",
+  "scripts": {
+    "test": "gulp watch",
+    "start": "concurrently \"nodemon ./server/server.js\" \"npm run build:ts\" \"npm run watch:ts\"",
+    "build:ts": "tsc",
+    "watch:ts": "tsc -w"
+  },
+  "dependencies": {
+    "@angular/common": "~2.2.0",
+    "@angular/compiler": "~2.2.0",
+    "@angular/core": "~2.2.0",
+    "@angular/forms": "~2.2.0",
+    "@angular/http": "~2.2.0",
+    "@angular/platform-browser": "~2.2.0",
+    "@angular/platform-browser-dynamic": "~2.2.0",
+    "@angular/router": "~3.2.0",
+    "@angular/upgrade": "~2.2.0",
+    "angular-in-memory-web-api": "~0.1.15",
+    "body-parser": "^1.14.2",
+    "core-js": "^2.4.1",
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "method-override": "^2.3.5",
+    "mongoose": "^4.7.1",
+    "ng2-metadata": "^1.3.5",
+    "path": "^0.12.7",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "5.0.0-beta.12",
+    "systemjs": "0.19.39",
+    "zone.js": "^0.6.25"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.6",
+    "@types/core-js": "^0.9.34",
+    "@types/node": "^6.0.45",
+    "concurrently": "^3.0.0",
+    "morgan": "^1.7.0",
+    "nodemon": "^1.11.1",
+    "typescript": "^2.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/VicentKun/mean-project-baseline.git"
+  },
+  "keywords": [
+    "mean",
+    "project",
+    "baseline",
+    "structure",
+    "node",
+    "express",
+    "mongo",
+    "angular2"
+  ],
+  "author": "Vicent Kun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/VicentKun/mean-project-baseline/issues"
+  },
+  "homepage": "https://gitlab.com/VicentKun/mean-project-baseline#readme"
+}
